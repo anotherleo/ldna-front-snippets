@@ -1,0 +1,58 @@
+// out: false
+// Easy Less compiler for VS Code.
+
+// * WORK-FRONT-SNIPPETS Project
+// ! SUMMARY
+// + Behavior
+// + Quick Pallete
+// + Badges Component
+
+// ! Behavior
+// ? '.c--badges' stands for 'component badges' and holds 
+// ? multiples <span>, each named .cb__xxx.
+
+// ! Quick Pallete
+.badgeModel() {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+
+// ! Badges Component
+.c--badges {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    .cb__html::before {
+        .badgeModel();
+        content: "HTML5";
+        background-color: orangered;
+    }
+
+    .cb__less::before {
+        .badgeModel();
+        content: "CSS3 | Less";
+        background-color: midnightblue;
+    }
+    .cb__boots::before {
+        .badgeModel();
+        content: "Bootstrap";
+        background-color: darkmagenta;
+    }
+    .cb__fa::before {
+        .badgeModel();
+        content: "FontAwesome";
+        background-color: darkslateblue;
+    }
+}
+
+/* *********************************************** */

@@ -1,0 +1,50 @@
+// out: false
+// Easy Less compiler for VS Code.
+
+// * WORK-FRONT-SNIPPETS Project
+
+main {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+.main__title {
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.components__navbar {
+    a {
+        display: block;
+        margin-bottom: 30px;
+        border: 1px solid gainsboro;
+        padding: 30px;
+        text-align: center;
+
+        h3 {
+            color: darkgreen;
+            font-size: 20px;
+        }
+
+        &:hover {
+            text-decoration: none;
+            border: 1px solid #979797;
+            transition: all linear .3s;
+        }
+
+        &.disabled {
+            cursor: not-allowed;
+
+            h3 {
+                color: gray;
+            }
+        }
+    }
+}
+
+/* *********************************************** */

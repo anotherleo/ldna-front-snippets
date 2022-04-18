@@ -1,0 +1,95 @@
+.c--badges {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.c--badges .cb__html::before {
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  content: "HTML5";
+  background-color: orangered;
+}
+.c--badges .cb__less::before {
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  content: "CSS3 | Less";
+  background-color: midnightblue;
+}
+.c--badges .cb__boots::before {
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  content: "Bootstrap";
+  background-color: darkmagenta;
+}
+.c--badges .cb__fa::before {
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  content: "FontAwesome";
+  background-color: darkslateblue;
+}
+/* *********************************************** */
+main {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  main {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+.main__title {
+  padding-bottom: 50px;
+  text-align: center;
+}
+.components__navbar a {
+  display: block;
+  margin-bottom: 30px;
+  border: 1px solid gainsboro;
+  padding: 30px;
+  text-align: center;
+}
+.components__navbar a h3 {
+  color: darkgreen;
+  font-size: 20px;
+}
+.components__navbar a:hover {
+  text-decoration: none;
+  border: 1px solid #979797;
+  transition: all linear 0.3s;
+}
+.components__navbar a.disabled {
+  cursor: not-allowed;
+}
+.components__navbar a.disabled h3 {
+  color: gray;
+}
+/* *********************************************** */
+/* *********************************************** */
